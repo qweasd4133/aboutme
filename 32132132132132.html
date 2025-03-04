@@ -9,17 +9,30 @@
 		h1 {color:orange; font-size:60px;}
 		h2 {color:#33ff33; font-size:40px;}
 	</style>
+<script>
+		function change1() {
+  			document.getElementById("pic").src = "e91ebef90489b06708158724f355e2ee.jpg";
+  			document.getElementById("chen bohan").innerText = "靜宜資管";
+		}
+
+		function change2() {
+  			document.getElementById("pic").src = "phpirHwUp.jpg";
+  			document.getElementById("h2text").innerText = "chen bohan";
+		}
+	</script>
 
 </head>
 <body>
 	<table width="70%">
 		<tr>
 			<td>
-				<img src="phpirHwUp.jpg"width="100%"></img>
+				<img src="phpirHwUp.jpg"width="100%"
+				id="pic" onmouseover="change1()" onmouseout="change2()">
+				</img>
 			</td>
 			<td>
 				<h1>陳柏翰</h1>
-	            <h2>Chen Bohan</h2>	
+	            <h2>chen bohan</h2>	
 			</td>
 		</tr>
     </table>
